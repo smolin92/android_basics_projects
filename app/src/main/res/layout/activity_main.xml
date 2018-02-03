@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.myinstagramsummary.MainActivity">
+
+    <ImageView
+        android:id="@+id/sunset"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/alicante_sunset"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:text="@string/description"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/instagram_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:background="@android:color/darker_gray">
+
+        <ImageView
+            android:id="@+id/instagram_icon"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="120dp"
+            android:paddingRight="80dp"
+            android:paddingTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/instagram"/>
+
+        <TextView
+            android:id="@+id/instagram_handle"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:textSize="36sp"
+            android:text="@string/profile"
+            android:fontFamily="sans-serif"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/fireshow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fireshow"/>
+
+        <ImageView
+            android:id="@+id/frog"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/costa_rica_frog"/>
+
+        <ImageView
+            android:id="@+id/boats"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scaleType="centerCrop"
+            android:src="@drawable/croatia_boats"/>
+    </LinearLayout>
+
+
+</LinearLayout>
